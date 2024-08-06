@@ -11,3 +11,9 @@ class PlayerViewSet(viewsets.ModelViewSet):
     queryset = Player.objects.all()
     serializer_class = PlayerSerializer
 
+def ShowHome(request):
+    return render(request,"home.html")
+
+def ShowAboutUs(request):
+    return render(request,"aboutus.html")
+

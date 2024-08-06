@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-6-od-xs$!o7d^#j56=h**j6_^%aaxsc50r4yqnj+i07@%)1a8f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'tennisacademy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['players/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cstennis',
         'USER': 'root',
-        'PASSWORD': 'Aarya@1971',
+        'PASSWORD': 'Hak@786',
         'HOST': 'localhost',
         'PORT': '3306',
     }
